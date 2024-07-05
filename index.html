@@ -4,9 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+
+  <div class="webpage-container">
+    <header class="header">
+      <nav class="nav">
+        <ul class="menu-top">
+          <li class="menu-top-item">
+            <div class="search-bar">
+              <img class="header-icon" src="./images/svgs/search.svg" alt="">
+              <div class="search-field"></div>
+            </div>
+          </li>
+          <li class="menu-top-item menu-top-item-bell"><img class="header-icon" src="./images/svgs/bell.svg" alt=""></li>
+          <li class="menu-top-item"><img class="header-avatar" src="./images/jpgs/avatar-morgan.jpg" alt=""></li>
+          <li class="menu-top-item"><div class="header-name">Morgan Oakley</div></li>
+        </ul>
+        <ul class="menu-bottom">
+          <li class="menu-bottom-item user-welcome-container">
+            <img class="user-welcome-avatar" src="./images/jpgs/avatar-morgan.jpg" alt="avatar which shows 3d render of old man with glasses on violet background">
+            <div class="user-welcome-message-container">
+              <div class="user-welcome">Hi there,</div>
+              <div class="user-name">Morgan Oakley (@morgan)</div>
+            </div>
+          </li>
+          <li class="menu-bottom-item"><button class="menu-bottom-btn">New</button></li>
+          <li class="menu-bottom-item"><button class="menu-bottom-btn">Upload</button></li>
+          <li class="menu-bottom-item"><button class="menu-bottom-btn">Share</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="side-bar">
+      <div class="side-bar-logo">
+        <img class="logo-icon" src="./images/svgs/dashboard.svg" alt="dashboard material icon">
+        <div class="logo-text">Dashboard</div>
+      </div>
+      <ul class="side-bar-links">
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/home.svg" alt="home material icon">
+          <div class="side-bar-link">Home</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/profile.svg" alt="id material icon">
+          <div class="side-bar-link">Profile</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/messages.svg" alt="messages material icon">
+          <div class="side-bar-link">Messages</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/history.svg" alt="clock material icon">
+          <div class="side-bar-link">History</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/tasks.svg" alt="files material icon">
+          <div class="side-bar-link">Home</div>
+        </li>
+        <li class="side-bar-item" style="margin-bottom: 65px;">
+          <img class="side-bar-icon" src="./images/svgs/communities.svg" alt="people material icon">
+          <div class="side-bar-link">Communities</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/settings.svg" alt="cog material icon">
+          <div class="side-bar-link">Settings</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/support.svg" alt="question mark material icon">
+          <div class="side-bar-link">Support</div>
+        </li>
+        <li class="side-bar-item">
+          <img class="side-bar-icon" src="./images/svgs/privacy.svg" alt="shield material icon">
+          <div class="side-bar-link">Privacy</div>
+        </li>
+      </ul>
+      <div class="side-bar-credit">
+        <div class="credit-text">Images by <a class="credit-link" href="https://www.freepik.com">Freepik</a></div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="column-one">
+        <div class="projects-header">Your Projects</div>
+        <div class="projects">
+          <div class="post">
+            <div class="post-header">Super Cool Project</div>
+            <div class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ratione, harum nulla dignissimos odio voluptatum.</div>
+          </div>
+          <div class="post">
+            <div class="post-header">Less Cool Project</div>
+            <div class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos doloremque, laudantium repellendus sequi pariatur temporibus accusantium error sint mollitia repellat!</div>
+          </div>
+          <div class="post">
+            <div class="post-header">Impossible App</div>
+            <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis necessitatibus aspernatur harum, fugit vero!</div>
+          </div>
+          <div class="post">
+            <div class="post-header">Easy Peasy App</div>
+            <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis qui eius assumenda maxime eaque dolore beatae expedita ea numquam aut?</div>
+          </div>
+          <div class="post">
+            <div class="post-header">Ad Blocker</div>
+            <div class="post-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla possimus perferendis corporis tempora cupiditate hic!</div>
+          </div>
+          <div class="post">
+            <div class="post-header">Money Maker</div>
+            <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate dolorem debitis magni perferendis, commodi facere molestias corporis sunt quam?</div>
+          </div>
+        </div>
+      </div>
+      <div class="column-two">
+        <div class="announcements-header">Announcements</div>
+        <div class="announcements">
+          <div class="announcement">
+            <div class="announcement-header">Site Maintenance</div>
+            <div class="announcement-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, ullam deleniti...</div>
+          </div>
+          <div class="announcement">
+            <div class="announcement-header">Community Share Day</div>
+            <div class="announcement-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam minus itaque...</div>
+          </div>
+          <div class="announcement" style="border-bottom: none; padding-bottom: none;">
+            <div class="announcement-header">Updated Privacy Policy</div>
+            <div class="announcement-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quam quos tempora...</div>
+          </div>
+        </div>
+        <div class="trending-header">Trending</div>
+        <div class="trending">
+          <div class="tag">
+            <img class="tag-avatar" src="./images/jpgs/avatar-tegan.jpg" alt="">
+            <div class="author-info">
+              <div class="tag-author">@tegan</div>
+              <div class="tag-name">World Peace Builder</div>
+            </div>
+          </div>
+          <div class="tag">
+            <img class="tag-avatar" src="./images/jpgs/avatar-morgan.jpg" alt="">
+            <div class="author-info">
+              <div class="tag-author">@morgan</div>
+              <div class="tag-name">Super Cool Project</div>
+            </div>
+          </div>
+          <div class="tag">
+            <img class="tag-avatar" src="./images/jpgs/avatar-kendall.jpg" alt="">
+            <div class="author-info">
+              <div class="tag-author">@kendall</div>
+              <div class="tag-name">Life Changing App</div>
+            </div>
+          </div>
+          <div class="tag">
+            <img class="tag-avatar" src="./images/jpgs/avatar-alex.jpg" alt="">
+            <div class="author-info">
+              <div class="tag-author">@alex</div>
+              <div class="tag-name">No Traffic Maker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
 </body>
 </html>
